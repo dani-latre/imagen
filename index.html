@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8" />
+      <meta name="description" content="web de dani.latre.">
+      <meta name="keywords" content="Daniel Latre, arte">
+      <meta name="author" content="Daniel Latre">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <meta name="robots" content="index, follow">
+
+        <!-- Open Graph para redes sociales -->
+        <meta property="og:title" content="dani.latre" />
+        <meta property="og:description" content="web de dani.latre" />
+        <meta property="og:image" content="https://dani-latre.xyz/img_optimizada/preview.jpg" />
+        <meta property="og:url" content="https://dani-latre.xyz/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="shortcut icon" href="icon\favicon_2.png" type="image/x-icon">
+
+
+    <title>dani.latre</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script data-goatcounter="https://danit0man.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+    
+
+    
+</head>
+<body>
+ 
+        
+       <div id="weather-clock-widget">
+  <div id="current-time">--:--:--</div>
+
+</div> 
+    <!-- Contenedor principal con scroll -->
+    <div class="desktop-container">
+        <!-- Espacio amplio para las imágenes -->
+        <div class="image-space" id="imageSpace">
+            <!-- Las imágenes se agregarán aquí dinámicamente -->
+        </div>
+    </div>
+    
+    
+    <!-- Modal para el zoom -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <!-- Contenedor para la imagen/video ampliada -->
+            <div id="zoomedMediaContainer"></div>
+        </div>
+        <div class="image-info">
+            <h2 id="imageTitle"></h2>
+            <p id="imageDescription"></p>
+        </div>
+    </div>
+    
+   <span class="close" id="modalClose">&times;</span>
+
+
+
+    
+
+    <script src="gallery.js"></script>
+</body>
+</html>
