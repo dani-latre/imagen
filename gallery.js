@@ -118,6 +118,7 @@ const mediaItems = [
     {src: "img_optimizada/usera_img8.webp", x: 354, y: 6976, type: "image"},
     {src: "img_optimizada/img_20260518_222610.jpg", x: 34, y: 8904, type: "image"},
     {src: "img_optimizada/luminosidad1.3.png", x: 281, y: 4833, type: "image"},
+    {src: "img_optimizada/luminosidad00.png", x: 1474, y: 4605, type: "image"},
     // Agrega más elementos según necesites
     
 ];
@@ -359,8 +360,7 @@ itemsToRender.forEach((item, index) => {
 
     mediaElement.draggable = false;
 
-    const title = document.createElement('p');
-    title.textContent = item.title || '';
+
 
     container.appendChild(mediaElement);
     container.appendChild(title);
