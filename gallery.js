@@ -114,6 +114,7 @@ const mediaItems = [
 
 
     
+    {src: "img_optimizada/usera_img10_1779273950046.webp", x: 761, y: 7659, type: "image"},
     // Agrega más elementos según necesites
     
 ];
