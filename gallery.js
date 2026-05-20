@@ -121,6 +121,7 @@ const mediaItems = [
     {src: "img_optimizada/luminosidad00.png", x: 1474, y: 4605, type: "image"},
     {src: "img_optimizada/img_20260519_203823.jpg", x: 978, y: 4990, type: "image"},
     {src: "img_optimizada/comfyui_temp_upilb_00093_.png", x: 1298, y: 145, type: "image"},
+    {src: "img_optimizada/pxl_20260506_124813146.jpg", x: 1082, y: 525, type: "image"},
     // Agrega más elementos según necesites
     
 ];
