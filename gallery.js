@@ -127,6 +127,7 @@ const mediaItems = [
     {src: "img_optimizada/pxl_20251127_194943932.raw-01.cover.jpg", x: 1588, y: 4546, type: "image"},
     {src: "img_optimizada/pxl_20250913_131625200.jpg", x: 858, y: 7402, type: "image"},
     {src: "img_optimizada/pxl_20260303_211024259.raw-01.cover.jpg", x: 515, y: 647, type: "image"},
+    {src: "img_optimizada/comfyui_temp_efhgx_00008_.png", x: 1616, y: 7963, type: "image"},
     // Agrega más elementos según necesites
     
 ];
