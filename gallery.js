@@ -129,6 +129,7 @@ const mediaItems = [
     {src: "img_optimizada/pxl_20260303_211024259.raw-01.cover.jpg", x: 515, y: 647, type: "image"},
     {src: "img_optimizada/comfyui_temp_efhgx_00008_.png", x: 1616, y: 7963, type: "image"},
     {src: "img_optimizada/screenshot_2026-05-27-04-02-37-481_com.mi.android.globallauncher2.jpg", x: 250, y: 5853, type: "image"},
+    {src: "img_optimizada/img_20260526_211729.jpg", x: 1455, y: 7296, type: "image"},
     // Agrega más elementos según necesites
     
 ];
