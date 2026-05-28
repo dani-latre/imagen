@@ -131,6 +131,7 @@ const mediaItems = [
     {src: "img_optimizada/screenshot_2026-05-27-04-02-37-481_com.mi.android.globallauncher2.jpg", x: 250, y: 5853, type: "image"},
     {src: "img_optimizada/img_20260526_211729.jpg", x: 1455, y: 7296, type: "image"},
     {src: "img_optimizada/img_20260526_191918.jpg", x: 565, y: 6366, type: "image"},
+    {src: "img_optimizada/img_20260527_231717.jpg", x: 948, y: 216, type: "image"},
     // Agrega más elementos según necesites
     
 ];
