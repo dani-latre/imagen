@@ -117,7 +117,6 @@ const mediaItems = [
     
     {src: "img_optimizada/usera_img10_1779273950046.webp", x: 761, y: 7659, type: "image"},
     {src: "img_optimizada/usera_img8.webp", x: 354, y: 6976, type: "image"},
-    {src: "img_optimizada/img_20260518_222610.jpg", x: 34, y: 8904, type: "image"},
     {src: "img_optimizada/luminosidad1.3.png", x: 281, y: 4833, type: "image"},
     {src: "img_optimizada/luminosidad00.png", x: 1474, y: 4605, type: "image"},
     {src: "img_optimizada/img_20260519_203823.jpg", x: 978, y: 4990, type: "image"},
@@ -134,7 +133,6 @@ const mediaItems = [
     {src: "img_optimizada/img_20260526_191918.jpg", x: 565, y: 6366, type: "image"},
     {src: "img_optimizada/img_20260527_231717.jpg", x: 948, y: 216, type: "image"},
     {src: "img_optimizada/img_20260529_200114.jpg", x: 35, y: 6197, type: "image"},
-    {src: "img_optimizada/img_20260527_135039.jpg", x: 1184, y: 2090, type: "image"},
     // Agrega más elementos según necesites
     
 ];
