@@ -99,15 +99,16 @@ const mediaItems = [
 
 
      //{src: "https://dani-latre.xyz/media/ruta-3d-modelo.mp4", x: 190, y: 8000, type: "video"},
-    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/humo-forma-suelo.mp4", x: 30, y: 60, type: "video"},
-    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/cubo_agua.mp4", x: 150, y: 700, type: "video"},
-    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/humo_garaje.mp4", x: 500, y: 1500, type: "video"},
-    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/proyeccion_local.mp4", x: 1000, y: 2400, type: "video"},
-    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/Plastico-Aire-Sala-Luces.mp4", x: 1000, y: 4500, type: "video"},
-    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/Ruta%20Modelo.mp4", x: 1000, y: 5000, type: "video"},
-    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/Fuegos%20.mp4", x: 1000, y: 4500, type: "video"},
-    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/6_am.mp4", x: 50, y: 7500, type: "video"},
-    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/reflectante_opt.mp4", x: 50, y: 7500, type: "video"},
+     
+    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/mediahumo-forma-suelo.mp4", x: 30, y: 60, type: "video"},
+    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/meddia/cubo_agua.mp4", x: 150, y: 700, type: "video"},
+    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/media/humo_garaje.mp4", x: 500, y: 1500, type: "video"},
+    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/media/proyeccion_local.mp4", x: 1000, y: 2400, type: "video"},
+    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/media/Plastico-Aire-Sala-Luces.mp4", x: 1000, y: 4500, type: "video"},
+    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/media/Ruta%20Modelo.mp4", x: 1000, y: 5000, type: "video"},
+    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/media/Fuegos%20.mp4", x: 1000, y: 4500, type: "video"},
+    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/media/6_am.mp4", x: 50, y: 7500, type: "video"},
+    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/media/reflectante_opt.mp4", x: 50, y: 7500, type: "video"},
 
 
    
@@ -133,6 +134,7 @@ const mediaItems = [
     {src: "img_optimizada/img_20260526_191918.jpg", x: 565, y: 6366, type: "image"},
     {src: "img_optimizada/img_20260527_231717.jpg", x: 948, y: 216, type: "image"},
     {src: "img_optimizada/img_20260529_200114.jpg", x: 35, y: 6197, type: "image"},
+    {src: "img_optimizada/img_20260527_135039.jpg", x: 1184, y: 2090, type: "image"},
     // Agrega más elementos según necesites
     
 ];
