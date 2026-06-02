@@ -127,7 +127,6 @@ const mediaItems = [
     {src: "img_optimizada/pxl_20251127_194943932.raw-01.cover.jpg", x: 1588, y: 4546, type: "image"},
     {src: "img_optimizada/pxl_20250913_131625200.jpg", x: 858, y: 7402, type: "image"},
     {src: "img_optimizada/pxl_20260303_211024259.raw-01.cover.jpg", x: 515, y: 647, type: "image"},
-    {src: "img_optimizada/comfyui_temp_efhgx_00008_.png", x: 1616, y: 7963, type: "image"},
     {src: "img_optimizada/screenshot_2026-05-27-04-02-37-481_com.mi.android.globallauncher2.jpg", x: 250, y: 5853, type: "image"},
     {src: "img_optimizada/img_20260526_211729.jpg", x: 1455, y: 7296, type: "image"},
     {src: "img_optimizada/img_20260526_191918.jpg", x: 565, y: 6366, type: "image"},
