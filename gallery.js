@@ -100,7 +100,7 @@ const mediaItems = [
 
      //{src: "https://dani-latre.xyz/media/ruta-3d-modelo.mp4", x: 190, y: 8000, type: "video"},
      
-    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/mediahumo-forma-suelo.mp4", x: 30, y: 60, type: "video"},
+    {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/media/humo-forma-suelo.mp4", x: 30, y: 60, type: "video"},
     {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/meddia/cubo_agua.mp4", x: 150, y: 700, type: "video"},
     {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/media/humo_garaje.mp4", x: 500, y: 1500, type: "video"},
     {src: "https://pub-7e8eb1e22c964401bce78fa4f68672d2.r2.dev/media/proyeccion_local.mp4", x: 1000, y: 2400, type: "video"},
