@@ -132,6 +132,7 @@ const mediaItems = [
     {src: "img_optimizada/img_20260526_191918.jpg", x: 565, y: 6366, type: "image"},
     {src: "img_optimizada/img_20260527_231717.jpg", x: 948, y: 216, type: "image"},
     {src: "img_optimizada/img_20260529_200114.jpg", x: 35, y: 6197, type: "image"},
+    {src: "img_optimizada/img_20260527_135039_1780413933053.jpg", x: 831, y: 5184, type: "image"},
     // Agrega más elementos según necesites
     
 ];

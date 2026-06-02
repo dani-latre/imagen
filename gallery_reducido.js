@@ -194,3 +194,169 @@ function setupModal() {
 
 // ========== INICIALIZAR ==========
 document.addEventListener("DOMContentLoaded", initGallery);
+
+
+// ===== SISTEMA DE TEXTO TIPO FIGMA =====
+
+function initTextTool() {
+  const imageSpace = document.getElementById("imageSpace");
+  const savedTexts = JSON.parse(localStorage.getItem("textItems") || "[]");
+
+  // Cargar textos guardados
+  savedTexts.forEach(data => createTextElement(data));
+
+  // Pulsar T para crear texto donde está el cursor
+  let cursorX = 0, cursorY = 0;
+
+  document.addEventListener("mousemove", (e) => {
+    const rect = imageSpace.getBoundingClientRect();
+    const container = imageSpace.closest(".desktop-container");
+    cursorX = e.clientX - rect.left + container.scrollLeft;
+    cursorY = e.clientY - rect.top + container.scrollTop;
+  });
+
+  document.addEventListener("keydown", (e) => {
+    // Solo si no estás escribiendo en otro input
+    if (e.key === "t" || e.key === "T") {
+      const tag = document.activeElement.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || document.activeElement.isContentEditable) return;
+
+      const data = { x: cursorX, y: cursorY, text: "", fontSize: 24, id: Date.now() };
+      const el = createTextElement(data);
+      saveTextItems();
+      // Activar edición inmediatamente
+      el.focus();
+    }
+  });
+
+  function createTextElement(data) {
+    const el = document.createElement("div");
+    el.contentEditable = true;
+    el.textContent = data.text || "";
+    el.dataset.textId = data.id;
+
+    Object.assign(el.style, {
+      position: "absolute",
+      left: data.x + "px",
+      top: data.y + "px",
+      fontSize: (data.fontSize || 24) + "px",
+      fontFamily: "Arial, sans-serif",
+      color: "#1a1a1a",
+      minWidth: "40px",
+      minHeight: "30px",
+      outline: "none",
+      cursor: "move",
+      zIndex: 10,
+      userSelect: "text",
+      resize: "both",
+      overflow: "hidden",
+      border: "1px dashed transparent",
+      padding: "4px",
+      lineHeight: "1.3",
+      whiteSpace: "pre-wrap",
+      wordBreak: "break-word",
+    });
+
+    // Borde visible al hacer foco
+    el.addEventListener("focus", () => {
+      el.style.border = "1px dashed #aaa";
+      el.style.cursor = "text";
+    });
+
+    el.addEventListener("blur", () => {
+      el.style.border = "1px dashed transparent";
+      el.style.cursor = "move";
+      if (el.textContent.trim() === "") {
+        el.remove();
+      }
+      saveTextItems();
+    });
+
+    // Guardar al escribir
+    el.addEventListener("input", saveTextItems);
+
+    // Rueda del ratón para cambiar tamaño de fuente
+    el.addEventListener("wheel", (e) => {
+      if (!e.ctrlKey) return;
+      e.preventDefault();
+      const current = parseInt(el.style.fontSize);
+      const newSize = Math.max(8, current + (e.deltaY < 0 ? 2 : -2));
+      el.style.fontSize = newSize + "px";
+      saveTextItems();
+    }, { passive: false });
+
+    // Doble clic para editar
+    el.addEventListener("dblclick", (e) => {
+      e.stopPropagation();
+      el.focus();
+    });
+
+    // Borrar con Supr cuando está seleccionado y vacío
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Delete" && el.textContent.trim() === "") {
+        el.remove();
+        saveTextItems();
+      }
+    });
+
+    // Arrastrable (solo cuando no está en modo edición)
+    makeDraggableText(el, imageSpace);
+
+    imageSpace.appendChild(el);
+    return el;
+  }
+
+  function saveTextItems() {
+    const items = [];
+    document.querySelectorAll("[data-text-id]").forEach(el => {
+      items.push({
+        id: el.dataset.textId,
+        x: parseInt(el.style.left),
+        y: parseInt(el.style.top),
+        text: el.textContent,
+        fontSize: parseInt(el.style.fontSize),
+      });
+    });
+    localStorage.setItem("textItems", JSON.stringify(items));
+  }
+
+  function makeDraggableText(el, space) {
+    let isDragging = false;
+    let startX, startY, startLeft, startTop;
+
+    el.addEventListener("mousedown", (e) => {
+      // Si está en modo edición (cursor de texto), no arrastrar
+      if (document.activeElement === el) return;
+      if (e.button !== 0) return;
+
+      isDragging = true;
+      startX = e.clientX;
+      startY = e.clientY;
+      startLeft = parseInt(el.style.left);
+      startTop = parseInt(el.style.top);
+      el.style.zIndex = 100;
+
+      e.preventDefault();
+
+      document.addEventListener("mousemove", onMove);
+      document.addEventListener("mouseup", onUp);
+    });
+
+    function onMove(e) {
+      if (!isDragging) return;
+      el.style.left = (startLeft + e.clientX - startX) + "px";
+      el.style.top = (startTop + e.clientY - startY) + "px";
+    }
+
+    function onUp() {
+      isDragging = false;
+      el.style.zIndex = 10;
+      saveTextItems();
+      document.removeEventListener("mousemove", onMove);
+      document.removeEventListener("mouseup", onUp);
+    }
+  }
+}
+
+// Llamar al init
+document.addEventListener("DOMContentLoaded", initTextTool);
