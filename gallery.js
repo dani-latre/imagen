@@ -143,6 +143,7 @@ const mediaItems = [
     {src: "img_optimizada/img_20260819_144823.jpg", x: 1235, y: 8372, type: "image"},
     {src: "img_optimizada/img_20260812_202020.jpg", x: 278, y: 8823, type: "image"},
     {src: "img_optimizada/screenshot_2026-11-24-13-05-50-683_com.miui.videoplayer.jpg", x: 88, y: 8601, type: "image"},
+    {src: "img_optimizada/img_20261117_165242.jpg", x: 269, y: 5688, type: "image"},
     // Agrega más elementos según necesites
     
 ];
